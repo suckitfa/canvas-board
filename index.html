@@ -14,10 +14,26 @@
 
     </canvas>
     <div class="actions">
-        <button id="eraser">橡皮檫</button>
-        <button>画笔</button>
+        <svg class="icon active" id="pen">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg class="icon" id="eraser">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg class="icon" id="downloadButton">
+            <use xlink:href="#icon-CloudDownload"></use>
+        </svg>
+        <svg class="icon" id="clearButton">
+            <use xlink:href="#icon-custom-clear"></use>
+        </svg>
     </div>
+    <ul class="colors">
+        <li class="green"></li>
+        <li class="blue"></li>
+        <li class="red"></li>
+    </ul>
     <script src="./js/index.js"></script>
+    <script src="//at.alicdn.com/t/font_2802576_63rq8mqjmy9.js"></script>
 </body>
 
 </html>

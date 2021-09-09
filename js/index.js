@@ -7,6 +7,26 @@ listenToUser(canvas)
     // 橡皮檫控制
 eraser.onclick = function() {
     eraserEnabled = !eraserEnabled
+    eraser.classList.add('active')
+    pen.classList.remove('active')
+}
+pen.onclick = function() {
+    eraserEnabled = false
+    pen.classList.add('active')
+    eraser.classList.remove('active')
+}
+clearButton.onclick = function() {
+    const x = document.documentElement.clientWidth
+    const y = document.documentElement.clientHeight
+    context.clearRect(0, 0, x, y)
+}
+downloadButton.onclick = function() {
+    const MIME_TYPE = 'image/png'
+    const pictureURL = canvas.toDataURL(MIME_TYPE, 1.0);
+    const downloadLink = document.createElement("a")
+    downloadLink.download = 'canvas.png'
+    downloadLink.href = pictureURL
+    downloadLink.click()
 }
 
 function listenToUser(canvas) {
