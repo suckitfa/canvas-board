@@ -1,0 +1,19 @@
+#canvas {
+    display: block;
+}
+
+
+/* 让canvas和视口同一边开始，减少差距 */
+
+body {
+    margin: 0;
+}
+
+.actions {
+    position: fixed;
+    bottom: 0;
+}
+
+.actions button {
+    display: inline-block;
+}
