@@ -6,6 +6,5 @@
 
 
 # 理解DOM的相关知识
-- clientHeight/clientWidth 
-- mouse事件和touch事件模拟笔记
-- 
+- clientHeight/clientWidth 和canvas之间的间距问题
+- mouse事件和touch事件模拟画笔轨迹
