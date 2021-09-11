@@ -1,0 +1,11 @@
+{
+    "name": "canvas-board",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/suckitfa/canvas-board.git",
+    "author": "suckitfa <254202042@qq.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "http-server -p 80"
+    }
+}

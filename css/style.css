@@ -15,6 +15,8 @@
 
 body {
     margin: 0;
+    /* 干掉滚动条 */
+    overflow: hidden;
 }
 
 .actions {
@@ -39,4 +41,34 @@ body {
 
 .colors {
     position: fixed;
+    top: 8px;
+    left: -52px;
+}
+
+.colors>li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 10px;
+}
+
+.colors>li.red {
+    background: red;
+}
+
+.colors>li.blue {
+    background: blue;
+}
+
+.colors>li.green {
+    background: green;
+}
+
+.colors>li.black {
+    background: black;
+}
+
+.colors>li.active {
+    transform: scale(1.5);
 }

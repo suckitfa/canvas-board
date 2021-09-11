@@ -15,6 +15,22 @@ pen.onclick = function() {
     pen.classList.add('active')
     eraser.classList.remove('active')
 }
+colors.onclick = function(event) {
+    const srcElement = event.srcElement
+    const color = srcElement.getAttribute('color')
+    const list = srcElement.parentElement.children
+    for (let i = 0; i < list.length; ++i) {
+        const currentLiElement = list[i]
+        const loacalColor = currentLiElement.getAttribute('color')
+        if (color === loacalColor) {
+            currentLiElement.classList.add('active')
+        } else {
+            currentLiElement.classList.remove('active')
+        }
+    }
+    // 更换画笔颜色
+    penColor = color
+}
 clearButton.onclick = function() {
     const x = document.documentElement.clientWidth
     const y = document.documentElement.clientHeight
