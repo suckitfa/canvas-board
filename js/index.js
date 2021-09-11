@@ -1,6 +1,6 @@
 var canvas = document.getElementById("canvas")
 var context = canvas.getContext('2d')
-var penColor = 'red'
+var penColor = 'black'
 var eraserEnabled = false // 橡皮檫使用情况
 autoSetCanvas(canvas) // 自适应屏幕宽高
 listenToUser(canvas)
